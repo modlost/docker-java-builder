@@ -1,0 +1,12 @@
+version: '3'
+services:
+  openjdk8-maven:
+    build:
+      context: maven
+      dockerfile: openjdk8/Dockerfile
+    image: java-maven-builder:openjdk8
+  openjdk7-maven:
+    build:
+      context: maven
+      dockerfile: openjdk7/Dockerfile
+    image: java-maven-builder:openjdk7
