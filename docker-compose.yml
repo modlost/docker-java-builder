@@ -1,12 +1,22 @@
 version: '3'
 services:
-  openjdk8-maven:
+  maven-jdk9:
     build:
       context: maven
-      dockerfile: openjdk8/Dockerfile
-    image: java-maven-builder:openjdk8
-  openjdk7-maven:
+      dockerfile: jdk9/Dockerfile
+    image: modlost/java-builder:1.0.0-maven-jdk9
+  maven-jdk8:
     build:
       context: maven
-      dockerfile: openjdk7/Dockerfile
-    image: java-maven-builder:openjdk7
+      dockerfile: jdk8/Dockerfile
+    image: modlost/java-builder:1.0.0-maven-jdk8
+  maven-jdk7:
+    build:
+      context: maven
+      dockerfile: jdk7/Dockerfile
+    image: modlost/java-builder:1.0.0-maven-jdk7
+#  gradle-jdk8:
+#    build:
+#      context: gradle
+#      dockerfile: jdk8/Dockerfile
+#    image: modlost/java-builder:gradle-jdk8
