@@ -15,6 +15,11 @@ services:
       context: maven
       dockerfile: jdk7/Dockerfile
     image: modlost/java-builder:1.0.0-maven-jdk7
+  maven-jdk6:
+    build:
+      context: maven
+      dockerfile: jdk6/Dockerfile
+    image: modlost/java-builder:1.0.0-maven-jdk6
 #  gradle-jdk8:
 #    build:
 #      context: gradle
