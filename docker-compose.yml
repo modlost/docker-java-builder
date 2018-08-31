@@ -9,7 +9,7 @@ services:
     build:
       context: maven
       dockerfile: jdk8/Dockerfile
-    image: modlost/java-builder:1.0.0-maven-jdk8
+    image: modlost/java-builder:1.0.1-maven-jdk8
   maven-jdk7:
     build:
       context: maven
