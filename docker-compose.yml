@@ -1,5 +1,10 @@
 version: '3'
 services:
+  maven-jdk11:
+    build:
+      context: maven
+      dockerfile: jdk11/Dockerfile
+    image: modlost/java-builder:1.0.0-maven-jdk11
   maven-jdk9:
     build:
       context: maven
